@@ -1,0 +1,323 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "apply": "Apply",
+    "viewAll": "View All",
+    "viewDetails": "View Details",
+    "learnMore": "Learn More",
+    "free": "Free",
+    "from": "From",
+    "to": "To"
+  },
+  "nav": {
+    "home": "Home",
+    "discover": "Discover",
+    "favorites": "Favorites",
+    "myTickets": "My Tickets",
+    "profile": "Profile",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "logout": "Log Out",
+    "settings": "Settings"
+  },
+  "header": {
+    "searchPlaceholder": "Search events, venues, or organizers...",
+    "toggleMenu": "Toggle menu",
+    "toggleSearch": "Toggle search"
+  },
+  "footer": {
+    "description": "Discover and book tickets for the best events in Nigeria. From concerts to conferences, find your next experience on PlatNG.",
+    "location": "Lagos, Nigeria",
+    "email": "hello@platng.com",
+    "phone": "+234 123 456 7890",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "careers": "Careers",
+    "press": "Press",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "safety": "Safety",
+    "communityGuidelines": "Community Guidelines",
+    "legal": "Legal",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "forOrganizers": "For Organizers",
+    "createEvent": "Create Event",
+    "partnerWithUs": "Partner With Us",
+    "organizerResources": "Organizer Resources",
+    "copyright": "© {year} PlatNG. All rights reserved.",
+    "followUs": "Follow us"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Amazing Events in Nigeria",
+      "subtitle": "From Lagos to Abuja, find concerts, conferences, festivals, and more. Book your tickets instantly.",
+      "searchPlaceholder": "Search for events...",
+      "browseEvents": "Browse Events",
+      "createEvent": "Create Event"
+    },
+    "featured": {
+      "title": "Featured Events",
+      "subtitle": "Don't miss out on these popular events"
+    },
+    "upcoming": {
+      "title": "Upcoming Events",
+      "subtitle": "What's happening soon"
+    },
+    "categories": {
+      "title": "Browse by Category",
+      "music": "Music",
+      "sports": "Sports",
+      "arts": "Arts & Culture",
+      "tech": "Technology",
+      "business": "Business",
+      "food": "Food & Drink",
+      "health": "Health & Wellness",
+      "education": "Education"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Find Events",
+        "description": "Browse thousands of events happening across Nigeria"
+      },
+      "step2": {
+        "title": "Book Tickets",
+        "description": "Secure your spot with instant ticket booking"
+      },
+      "step3": {
+        "title": "Attend & Enjoy",
+        "description": "Show your e-ticket and enjoy the experience"
+      }
+    }
+  },
+  "discover": {
+    "title": "Discover Events",
+    "subtitle": "Find amazing events happening in Nigeria • {total} events available",
+    "searchPlaceholder": "Search for events, venues, or organizers...",
+    "showingResults": "Showing results for \"{query}\"",
+    "noEvents": {
+      "title": "No Events Found",
+      "description": "No events are currently available. Check back later!"
+    },
+    "filters": {
+      "title": "Filters",
+      "category": "Category",
+      "location": "Location",
+      "date": "Date",
+      "price": "Price",
+      "eventType": "Event Type",
+      "allCategories": "All Categories",
+      "anyLocation": "Any Location",
+      "anyDate": "Any Date",
+      "anyPrice": "Any Price",
+      "live": "Live",
+      "online": "Online",
+      "hybrid": "Hybrid",
+      "freeOnly": "Free Events Only"
+    },
+    "sort": {
+      "label": "Sort by",
+      "relevance": "Relevance",
+      "dateAsc": "Date (Earliest First)",
+      "dateDesc": "Date (Latest First)",
+      "priceAsc": "Price (Low to High)",
+      "priceDesc": "Price (High to Low)",
+      "popularity": "Popularity"
+    }
+  },
+  "event": {
+    "details": "Event Details",
+    "date": "Date",
+    "time": "Time",
+    "venue": "Venue",
+    "organizer": "Organizer",
+    "category": "Category",
+    "about": "About This Event",
+    "tickets": "Tickets",
+    "selectTickets": "Select Tickets",
+    "bookNow": "Book Now",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites",
+    "share": "Share",
+    "status": {
+      "draft": "Draft",
+      "published": "Published",
+      "cancelled": "Cancelled",
+      "completed": "Completed"
+    },
+    "type": {
+      "live": "Live Event",
+      "online": "Online Event",
+      "hybrid": "Hybrid Event"
+    },
+    "ticketTypes": {
+      "available": "{count} available",
+      "soldOut": "Sold Out",
+      "quantityAvailable": "{available} of {total} available"
+    },
+    "pricing": {
+      "free": "Free",
+      "from": "From {price}",
+      "tba": "Price TBA"
+    }
+  },
+  "favorites": {
+    "title": "My Favorites",
+    "subtitle": "Events you've saved for later",
+    "empty": {
+      "title": "No Favorites Yet",
+      "description": "Start adding events to your favorites to see them here",
+      "action": "Discover Events"
+    },
+    "removed": "Removed from favorites",
+    "added": "Added to favorites"
+  },
+  "tickets": {
+    "title": "My Tickets",
+    "subtitle": "Your upcoming and past events",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "empty": {
+      "title": "No Tickets Yet",
+      "description": "Book your first event to see your tickets here",
+      "action": "Browse Events"
+    },
+    "ticketDetails": "Ticket Details",
+    "orderId": "Order ID",
+    "purchaseDate": "Purchase Date",
+    "qrCode": "QR Code",
+    "downloadTicket": "Download Ticket",
+    "viewEvent": "View Event"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Log in to your account to continue",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "submit": "Log In",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Sign up",
+      "orContinueWith": "Or continue with",
+      "google": "Continue with Google"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join PlatNG to discover amazing events",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Sign Up",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Log in",
+      "terms": "By signing up, you agree to our {terms} and {privacy}",
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "profile": {
+      "title": "My Profile",
+      "personalInfo": "Personal Information",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "bio": "Bio",
+      "preferences": "Preferences",
+      "language": "Language",
+      "notifications": "Notifications",
+      "emailNotifications": "Email Notifications",
+      "pushNotifications": "Push Notifications",
+      "security": "Security",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "updateProfile": "Update Profile",
+      "deleteAccount": "Delete Account",
+      "deleteAccountWarning": "This action cannot be undone"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "emailExists": "Email already exists",
+      "passwordMismatch": "Passwords do not match",
+      "weakPassword": "Password is too weak",
+      "invalidEmail": "Invalid email address",
+      "requiredField": "This field is required",
+      "phoneInvalid": "Invalid phone number"
+    }
+  },
+  "search": {
+    "suggestedEvents": "Suggested Events ({count})",
+    "viewAllResults": "View all results for \"{query}\"",
+    "noResults": "No results found",
+    "tryDifferent": "Try a different search term"
+  },
+  "errors": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "Sorry, we couldn't find the page you're looking for.",
+      "action": "Go to Homepage"
+    },
+    "500": {
+      "title": "Something Went Wrong",
+      "description": "We're experiencing technical difficulties. Please try again later.",
+      "action": "Refresh Page"
+    },
+    "offline": {
+      "title": "You're Offline",
+      "description": "Please check your internet connection and try again."
+    },
+    "loadingFailed": "Failed to load data",
+    "tryAgain": "Try Again"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be no more than {max} characters",
+    "match": "Fields must match",
+    "url": "Please enter a valid URL",
+    "number": "Please enter a valid number",
+    "positive": "Must be a positive number",
+    "integer": "Must be a whole number"
+  },
+  "date": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week",
+    "nextWeek": "Next Week",
+    "thisMonth": "This Month",
+    "nextMonth": "Next Month",
+    "formats": {
+      "short": "MMM d",
+      "medium": "MMM d, yyyy",
+      "long": "MMMM d, yyyy",
+      "full": "EEEE, MMMM d, yyyy",
+      "time": "h:mm a",
+      "dateTime": "MMM d • h:mm a"
+    }
+  },
+  "currency": {
+    "naira": "₦",
+    "format": "₦{amount}"
+  }
+}
