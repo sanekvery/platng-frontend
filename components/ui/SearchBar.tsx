@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback, useRef, useEffect, Suspense } from 'react';
 import { Search, X, MapPin, Calendar } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -38,7 +38,7 @@ interface SearchBarProps {
  * <SearchBar variant="header" showSuggestions />
  * ```
  */
-export function SearchBar({
+function SearchBarContent({
   variant = 'inline',
   placeholder = 'Search events, venues, or organizers...',
   autoFocus = false,
@@ -309,5 +309,47 @@ export function SearchBar({
         </div>
       )}
     </div>
+  );
+}
+
+export function SearchBar(props: SearchBarProps) {
+  return (
+    <Suspense fallback={
+      <div className={cn('relative', props.className)}>
+        <div className={cn(
+          'relative flex items-center',
+          {
+            'h-10': props.variant === 'header',
+            'h-14 md:h-16': props.variant === 'hero',
+            'h-12': props.variant === 'inline' || !props.variant,
+          }
+        )}>
+          <Search className={cn(
+            'absolute left-3 text-gray-400',
+            {
+              'h-4 w-4': props.variant === 'header',
+              'h-5 w-5 md:h-6 md:w-6': props.variant === 'hero',
+              'h-5 w-5': props.variant === 'inline' || !props.variant,
+            }
+          )} />
+          <input
+            type="text"
+            placeholder={props.placeholder || 'Search events, venues, or organizers...'}
+            disabled
+            className={cn(
+              'w-full rounded-lg border border-gray-300 bg-white transition-all',
+              'focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary/20',
+              {
+                'pl-9 pr-9 text-sm': props.variant === 'header',
+                'pl-11 pr-12 text-base md:pl-14 md:pr-14 md:text-lg': props.variant === 'hero',
+                'pl-10 pr-10 text-base': props.variant === 'inline' || !props.variant,
+              }
+            )}
+          />
+        </div>
+      </div>
+    }>
+      <SearchBarContent {...props} />
+    </Suspense>
   );
 }
