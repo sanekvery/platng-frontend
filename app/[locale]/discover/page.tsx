@@ -1,13 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useEvents } from '@/hooks/useEvents';
 import { SearchBar } from '@/components/ui/SearchBar';
 import { EventCard } from '@/components/events/EventCard';
 import { CategoryFilter } from '@/components/events/CategoryFilter';
 
-export default function DiscoverPage() {
+function DiscoverContent() {
   const searchParams = useSearchParams();
   const searchQuery = searchParams?.get('q') || '';
   const [filters] = useState({});
@@ -114,5 +114,31 @@ export default function DiscoverPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function DiscoverPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <div className="container mx-auto px-4 py-8">
+          <div className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900">Discover Events</h1>
+            <p className="mt-2 text-gray-600">Loading events...</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="animate-pulse rounded-lg bg-white p-6 shadow">
+                <div className="mb-4 h-48 rounded bg-gray-200"></div>
+                <div className="mb-2 h-6 rounded bg-gray-200"></div>
+                <div className="h-4 rounded bg-gray-200"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    }>
+      <DiscoverContent />
+    </Suspense>
   );
 }

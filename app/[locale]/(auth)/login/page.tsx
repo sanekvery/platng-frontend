@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import { Mail, Lock, Eye, EyeOff, AlertCircle } from 'lucide-react';
@@ -24,7 +24,7 @@ function validateRedirectUrl(url: string | null): string {
   return '/discover';
 }
 
-export default function LoginPage() {
+function LoginContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectUrl = validateRedirectUrl(searchParams?.get('redirect'));
@@ -314,5 +314,25 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <div className="container mx-auto px-4 py-16">
+          <div className="mx-auto max-w-md">
+            <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+              <div className="flex items-center justify-center py-12">
+                <div className="h-12 w-12 animate-spin rounded-full border-4 border-brand-primary border-t-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <LoginContent />
+    </Suspense>
   );
 }
